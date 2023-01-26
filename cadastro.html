@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UFSBook - Cadastro</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+   <header class="menu-bg">
+      <div class="menu-logo">
+         <p>UFSBook</p>
+         <img src="ufsbook-logo.png" alt="Logo do site">
+      </div>
+      <nav class="nav">
+         <div class="menu-nav">
+            <div><a href="index.html">home</a></div>
+            <div><a href="">mais vendidos</a></div>
+            <div><a href="">nacionais</a></div>
+            <div class="menu-item dropdown-menu">
+                <span>categorias</span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="">Terror</a></li>
+                  <li class="submenu-item"><a href="">Romance</a></li>
+                  <li class="submenu-item"><a href="">Clássicos</a></li>
+                  <li class="submenu-item"><a href="">Escolares</a></li>
+                  <li class="submenu-item"><a href="">Estrangeiros</a></li>
+                  <li class="submenu-item"><a href="">Sugestões de Leitura</a></li>
+                </ul>
+            </div>
+            <div class="menu-item dropdown-menu">
+                <span>manutenção dos itens</span>
+                <ul class="submenu">
+                  <li class="submenu-item"><a href="">Consulta de Itens</a></li>
+                  <li class="submenu-item"><a href="cadastro.html">Cadastro de Itens</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+   </header>
+
+   <div class="container-titulo-cadastro">
+      <h1 class="titulo-cadastro">Cadastro de Itens</h1>
+   </div>
+
+   <section class = "container-forms-cadastro">   
+      <form id="formCadastro" name="formularioCadastro" onsubmit="return(validationFunc())"> 
+         <p><label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo"></p>
+         <p><label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor"></p>
+         <div class="container-subflex-cadastro">
+            <p><label for="editora">Editora:</label>
+               <input type="text" id="editora" name="editora"></p>
+            <p><label for="anoObra">Ano da Obra:</label>
+               <input type="text" id="anoObra" name="anoObra" maxlength="4"></p>
+         </div>
+         <p id="error_box2">
+            <span id="error2"></span>
+            <span class="right" id="err-message2"></span>
+         </p>
+         <div class="container-subflex-center-cadastro">
+            <p><label id="capa-livro" for="capaLivro">Enviar Capa do Livro</label>
+               <input type="file" id="capaLivro" name="capaLivro"></p>
+         </div>
+         <p><label for="nomeVendedor">Nome do Vendedor:</label>
+            <input type="text" id="nomeVendedor" name="nomeVendedor"></p>
+         <div class="container-subflex-cadastro">
+            <p><label for="emailVendedor">Email do Vendedor:</label>
+               <input type="email" id="emailVendedor" name="emailVendedor"></p>
+            <p><label for="telefoneVendedor">Telefone de Contato:</label>
+               <input type="tel" id="telefoneVendedor" maxlength="11" name="telefoneVendedor"></p>
+         </div>
+         <p id="error_box">
+            <span id="error"></span>
+            <span class="right" id="err-message"></span>
+         </p>
+         <div class="container-subflex-center-cadastro">
+            <p><input type="submit" value="Enviar"></p> 
+         </div>
+      </form>  
+  </section>
+
+  <script src="script.js"></script>
+
+  <footer>
+   <p>UFSBook - Julio Cesar Gomes Nscimento, Lucas Victorio Paiola e Luiza Gandolfi Barioto - Web Dev - 2023</p>
+</footer>
+   
+</body>
+</html>

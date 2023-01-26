@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&display=swap');
+:root {
+   --fonte: 'Imbue', serif;
+}
+
+/* estilos gerais */
+
+body{
+  margin: auto;
+}
+
+header {
+   margin-bottom: 500px;
+}
+
+p,h1,h2,ul,li,a,span {
+  font-family: var(--fonte);
+  color: #000000;
+}
+
+li, a{
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-bg {
+	width: 100%;
+  top: 0;
+	margin: 0 auto;
+	display: flex;
+  flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+  align-content: center;
+  position: fixed;
+  background-color: #d94f04;
+}
+
+.menu-logo {
+   display: flex;
+   align-items: center;
+   height: 150px;
+}
+
+.menu-logo p {
+   color: white;
+   font-size: 96px;
+   line-height: 115px
+}
+
+.menu-logo img {
+   width: 175px;
+   height: 118px;
+   padding-left: 20px;
+}
+
+.nav{
+  width: 100%;
+  background-color: #F29325;
+}
+
+.menu-nav{
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 100%;
+   justify-content: space-around;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.menu-nav div{
+  width: 20%;
+  text-align: center;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-nav a:hover, span:hover {
+   color: white;
+}
+
+
+.submenu {
+  text-align: center;
+  display: none;
+  position: absolute;
+  padding: 0;
+  background-color: #025259;
+  color: #FFFFFF;
+  top: 194px;
+}
+
+.dropdown-menu:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item.dropdown-menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.submenu a,
+.submenu a:visited {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.submenu-item {
+   display: flex;
+   justify-content: center;
+   width: 140px;
+   height: 50px;
+   border: 2px solid black;
+   align-items: center;
+}
+
+.submenu {
+   text-align: center;
+}
+
+.submenu-item:hover {
+  transition: 0.5s;
+}
+
+
+footer {
+   background-color: #d94f04;
+   text-align: center;
+   width: 100%;
+   padding: 10px 0px 10px 0px;
+   color: #FFFFFF;
+}
+
+/* estilos da home */
+.lista-livros{
+  padding-top: 230px;
+}
+
+.linha {
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+}
+
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 150px;
+  max-width: 250px;
+  background-color: #007172;
+  border: 3px solid;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 10px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.card p{
+   color: white;
+}
+
+.conteudo img {
+   width: 60%;
+   margin: 10px auto;
+   display: block;
+}
+
+.botao-comprar{
+   background-color: white;
+   color: #d94f04;
+   font-family: var(--fonte);
+   border: 1px solid;
+   border-radius: 15px;
+   font-size: 25px;
+}
+
+/* estilos do cadastro.html */
+
+.titulo-cadastro {
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-titulo-cadastro {
+   margin-top: 240px;
+}
+
+.container-forms-cadastro {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container-subflex-cadastro {
+   display: flex;
+   justify-content: space-between;
+}
+
+#formCadastro .container-subflex-cadastro input {
+   width: 180px;
+}
+
+.container-subflex-center-cadastro {
+   display: flex;
+   justify-content: center;
+}
+
+#formCadastro .container-subflex-center-cadastro input {
+   width: 180px;
+}
+
+#formCadastro p {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#formCadastro input {
+   background-color: #025259;
+   color: white;
+   display: block;
+   height: 32px;
+   width: 481px;
+   left: 119px;
+   top: 360px;
+   border-radius: 5px;
+}
+
+#formCadastro input[type="file"] {
+   display: none;
+}
+
+#capa-livro {
+   padding: 20px 10px;
+   width: 200px;
+   background-color: #025259;
+   color: #FFF;
+   text-align: center;
+   display: block;
+   margin-top: 10px;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+#capa-livro:hover {
+   background-color: #02454b;
+}
+
+form#formCadastro p.row{
+   width: 100%;
+   text-align: center;
+}
+
+form#formCadastro p.row .right{
+   float: right;
+}
+
+#error_box span, #error_box2 span{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   color: #F29325;
+}
+
+/* Grid */
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.grid-1 		{width: 40px;}
+.grid-2 		{width: 100px;}
+.grid-3 		{width: 160px;}
+.grid-4 		{width: 220px;}
+.grid-5 		{width: 280px;}
+.grid-6 		{width: 340px;}
+.grid-7 		{width: 400px;}
+.grid-8 		{width: 460px;}
+.grid-9 		{width: 520px;}
+.grid-10 	{width: 580px;}
+.grid-11 	{width: 640px;}
+.grid-12 	{width: 700px;}
+.grid-13 	{width: 760px;}
+.grid-14 	{width: 820px;}
+.grid-15 	{width: 880px;}
+.grid-16 	{width: 940px;}
+.grid-1-3	{width: 300px;}
+
+	
