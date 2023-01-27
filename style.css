@@ -153,15 +153,6 @@ footer {
    padding: 20px 0;
 }
 
-
-.lista {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .card {
   height: 150px;
   max-width: 250px;
